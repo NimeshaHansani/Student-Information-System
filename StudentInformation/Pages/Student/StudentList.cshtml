@@ -1,0 +1,31 @@
+﻿@page
+@model StudentInformation.Pages.Student.StudentListModel
+@{
+}
+
+<br>
+<h2>List of Students</h2>
+<br />
+<a class="btn btn-primary" href="/Student/AddStudent" role="button">New Student</a>
+<br /><br />
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>City</th>
+			<th>Course ID</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(var item in Model.listStudents)
+		{
+			<tr>
+				<td>@item.Id</td>
+				<td>@item.Name</td>
+				<td>@item.City</td>
+				<td>@item.CourseId</td>
+			</tr>
+		}
+	</tbody>
+</table>

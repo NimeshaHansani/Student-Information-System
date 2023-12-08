@@ -1,0 +1,36 @@
+﻿@page
+@model StudentInformation.Pages.Student.AddStudentModel
+@{
+}
+
+<br />
+<h1>New Student</h1>
+<br /><br />
+<form method="post">
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-lebel">Student Name</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="name" value="">
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-lebel">City</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="city" value="">
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-lebel">Course ID</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="cID" value="">
+		</div>
+	</div>
+	<div class="row mb-3">
+		<div class="offset-sm-3 col-sm-3 d-grid">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+		<div class="col-sm-3 d-grid">
+			<div class="btn btn-outline-primary" href="/" role="button">Cancel</div>
+		</div>
+	</div>
+</form>

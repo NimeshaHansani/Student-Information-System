@@ -1,0 +1,30 @@
+﻿@page
+@model StudentInformation.Pages.Course.AddCourseModel
+@{
+}
+
+<br />
+<h2>New Course</h2>
+<br />
+<form method="post">
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-lebel">Course Name</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="name" value="" >
+		</div>
+	</div>
+	<div class="row mb-3">
+		<label class="col-sm-3 col-form-lebel">Lecture Name</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="lectureName" value="">
+		</div>
+	</div>
+	<div class="row mb-3">
+		<div class="offset-sm-3 col-sm-3 d-grid">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+		<div class="col-sm-3 d-grid">
+		<div class="btn btn-outline-primary" href="/" role="button">Cancel</div>
+		</div>
+	</div>
+</form>
